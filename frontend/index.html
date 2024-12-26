@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Book an Appointment</h1>
+        <form id="booking-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="phone">Your Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required pattern="^[0-9]{10}$" title="Please enter a valid 10-digit phone number" />
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time-slot">Select Time Slot:</label>
+            <select id="time-slot" name="time-slot" required>
+                <option value="" disabled selected>Select a time slot</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="message" role="alert" aria-live="polite"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
