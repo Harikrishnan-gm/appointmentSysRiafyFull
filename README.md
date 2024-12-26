@@ -241,7 +241,7 @@ Frontend:
 Upload the appointment-booking.js and style.css files to your desired location (local or cloud storage).
 Include the appointment-booking.js file in the <script> tag on the website you want to embed the plugin in.
    
-  
+
 
 3. Script to Embed the Plugin on a Webpage
 To embed the plugin on a webpage, simply include the following <script> tag in the HTML of the target webpage:
@@ -257,13 +257,16 @@ please find the attachments
 
 
 Backend API Test Cases
+
 Test Case 1: Fetch Available Slots
 Scenario: User fetches available slots for a specific date.
+
 Steps:
 Make a GET request to /available-slots with a valid date (e.g., 2024-12-22).
 Ensure the break times (13:00 and 13:30) are excluded.
 Ensure slots that are already booked on the given date are not returned.
 Expected Result: Response contains only unbooked slots, excluding break times.
+
 Test Case 2: Book an Appointment
 Scenario: User books a valid slot.
 Steps:
